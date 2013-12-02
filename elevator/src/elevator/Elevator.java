@@ -11,6 +11,8 @@ import java.lang.*;
 import java.util.*;
 import java.io.*;
 
+import edu.illinois.keshmesh.annotations.EntryPoint;
+
 public class Elevator {
 
     // shared control object
@@ -111,6 +113,7 @@ public class Elevator {
         }
     }
 
+    @EntryPoint
     public static void main(String args[]) {
         Elevator building = new Elevator(args[0]);
         long start = new Date().getTime();
